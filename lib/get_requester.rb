@@ -11,7 +11,7 @@ attr_accessor :url
  end
 
  def get_response_body
-    uri = URI.parse(self.url)
+    uri = URI.parse(self.url) #it is going to the url that is going to be provided
     response = Net::HTTP.get_response(uri)
     response.body
 
